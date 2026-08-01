@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your flight now at the lowest prices to the Middle East, Europe, and Gulf Area. The cheapest fares on direct flights to exclusive destinations.">
+    <meta name="theme-color" content="#0E0E0E">
+    <title>Air Cairo</title>
+
+    <!-- Bootstrap 5.3 + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== Top announcement bar ===== -->
+    <div class="top-bar text-center">
+        <div class="container">
+            We are using cookies to personalize content and ads, provide social share features, and analyze our traffic. By continuing to browse aircairo.com, you agree to our
+            <a href="#">Privacy Policy</a> and the use of cookies.
+        </div>
+    </div>
+
+    <!-- ===== Header ===== -->
+    <header class="ac-header" id="Header">
+        <nav class="container d-flex align-items-center justify-content-between py-2">
+            <a href="#" class="logo mainlogo">
+                <img src="assets/images/logo.png" alt="Air Cairo" class="img-fluid">
+            </a>
+
+            <div class="header-actions align-items-center d-flex">
+                <!-- Search -->
+                <div class="search d-flex align-items-center justify-content-center">
+                    <form class="search-box" onsubmit="event.preventDefault(); alert('Search results would appear here.');">
+                        <input class="search-input" type="text" name="query" placeholder="Type to search">
+                        <button class="search-btn" type="submit" aria-label="Search"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Mobile app -->
+                <a href="#" class="icon-btn d-none d-sm-inline-flex ms-1" aria-label="Mobile app" title="Get the Air Cairo app">
+                    <i class="bi bi-phone"></i>
+                </a>
+
+                <!-- Language -->
+                <div class="dropdown">
+                    <button class="lang-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i>
+                        <span class="d-none d-md-inline">Egypt (English)</span>
+                        <i class="bi bi-chevron-down small"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end p-2 languages-dropdown" style="min-width: 320px; max-height: 70vh; overflow:auto;">
+                        <h6 class="dropdown-header">Choose country &amp; language</h6>
+                        <a class="dropdown-item active d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Egypt"><span class="fw-semibold me-1">Egypt</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="مصر"><span class="me-1">مصر</span><span>(العربية)</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Saudi Arabia"><span class="me-1">Saudi Arabia</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Kuwait"><span class="me-1">Kuwait</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="UAE"><span class="me-1">United Arab Emirates</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Qatar"><span class="me-1">Qatar</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Jordan"><span class="me-1">Jordan</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Germany"><span class="me-1">Germany</span><span>(English)</span></a>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Italy"><span class="me-1">Italy</span><span>(English)</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img class="flag me-2" src="assets/images/icons/where-we-fly.png" alt="Global"><span class="me-1">Global</span><span>(English)</span></a>
+                    </div>
+                </div>
+
+                <!-- Hamburger -->
+                <button class="hamburger ms-2" aria-label="Open menu" type="button">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- ===== Mega Menu ===== -->
+        <div class="mega-menu" id="mainMenu">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="category"><i class="bi bi-airplane"></i> Plan &amp; Book</div>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-ticket-perforated"></i> My Booking</a></li>
+                            <li><a href="#"><i class="bi bi-airplane-engines"></i> Book a Flight</a></li>
+                            <li><a href="#"><i class="bi bi-tags"></i> Special Offers</a></li>
+                            <li><a href="#"><i class="bi bi-map"></i> Route Map</a></li>
+                            <li><a href="#"><i class="bi bi-passport"></i> Visa and Health</a></li>
+                            <li><a href="#"><i class="bi bi-bus-front"></i> Airport Transfer</a></li>
+                            <li><a href="#"><i class="bi bi-check2-square"></i> Online Check-in</a></li>
+                            <li><a href="#"><i class="bi bi-car-front"></i> Discover Cars</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="category"><i class="bi bi-info-circle"></i> Travel Info</div>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-briefcase"></i> Baggage</a></li>
+                            <li><a href="#"><i class="bi bi-person-wheelchair"></i> Special Service</a></li>
+                            <li><a href="#"><i class="bi bi-person-check"></i> Seat Selection</a></li>
+                            <li><a href="#"><i class="bi bi-building-check"></i> Airport Check-in</a></li>
+                            <li><a href="#"><i class="bi bi-clock-history"></i> Flight Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="category"><i class="bi bi-buildings"></i> About Us</div>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-bullseye"></i> Mission &amp; Vision</a></li>
+                            <li><a href="#"><i class="bi bi-airplane"></i> About Air Cairo</a></li>
+                            <li><a href="#"><i class="bi bi-newspaper"></i> Travel News</a></li>
+                            <li><a href="#"><i class="bi bi-journal-text"></i> Air Cairo Travel Blog</a></li>
+                            <li><a href="#"><i class="bi bi-rocket-takeoff"></i> Fleet Page</a></li>
+                            <li><a href="#"><i class="bi bi-megaphone"></i> Press Release</a></li>
+                            <li><a href="#"><i class="bi bi-person-badge"></i> Meet Our CEO</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="category"><i class="bi bi-headset"></i> Contact Us</div>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-question-circle"></i> FAQ</a></li>
+                            <li><a href="#"><i class="bi bi-life-preserver"></i> Support</a></li>
+                            <li><a href="#"><i class="bi bi-telephone"></i> Contacts</a></li>
+                            <li><a href="#"><i class="bi bi-envelope-heart"></i> Subscribe</a></li>
+                        </ul>
+                        <div class="socialMedias d-flex mt-3">
+                            <a class="me-2" href="#" aria-label="Facebook"><img src="assets/images/social/facebook.png" alt="facebook"></a>
+                            <a class="me-2" href="#" aria-label="Instagram"><img src="assets/images/social/instagram.png" alt="instagram"></a>
+                            <a class="me-2" href="#" aria-label="Twitter"><img src="assets/images/social/twitter.png" alt="twitter"></a>
+                            <a class="me-2" href="#" aria-label="YouTube"><img src="assets/images/social/youtube.png" alt="youtube"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="assets/images/social/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Hero Slider ===== -->
+    <section class="hero-slider" id="heroSlider">
+        <div class="hero-slide active">
+            <img src="assets/images/hero/hero-ist.jpg" alt="Istanbul" class="bg-img">
+            <div class="bg-overlay"></div>
+            <div class="hero-content">
+                <h2 class="h1">Fly to Istanbul</h2>
+                <p>Discover the magic of Istanbul with Air Cairo's lowest fares</p>
+                <a href="#booking" class="btn btn-main">Book Now</a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/hero/hero-atena.jpg" alt="Athens" class="bg-img">
+            <div class="bg-overlay"></div>
+            <div class="hero-content">
+                <h2 class="h1">Athens Awaits You</h2>
+                <p>Book your direct flight to Athens from Cairo and Alexandria</p>
+                <a href="#booking" class="btn btn-main">Book Now</a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/hero/hero-chatbot.jpg" alt="Air Cairo Services" class="bg-img">
+            <div class="bg-overlay"></div>
+            <div class="hero-content">
+                <h2 class="h1">24/7 Support at Your Fingertips</h2>
+                <p>Our chatbot is here to help you plan your perfect trip</p>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/hero/hero-blog.jpg" alt="Air Cairo Blog" class="bg-img">
+            <div class="bg-overlay"></div>
+            <div class="hero-content">
+                <h2 class="h1">The Art of the Egyptian Quick-Trip</h2>
+                <p>How to master a multi-city itinerary with Air Cairo</p>
+                <a href="#offers" class="btn btn-main">Read More</a>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/hero/hero-home.jpg" alt="Special Offers" class="bg-img">
+            <div class="bg-overlay"></div>
+            <div class="hero-content">
+                <h2 class="h1">Explore the Beauty of Egypt</h2>
+                <p>Direct flights to Hurghada, Sharm el-Sheikh and more</p>
+                <a href="#booking" class="btn btn-main">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="slider-arrow prev" aria-label="Previous slide"><i class="bi bi-chevron-left"></i></button>
+        <button class="slider-arrow next" aria-label="Next slide"><i class="bi bi-chevron-right"></i></button>
+        <div class="slider-indicators">
+            <button class="active" aria-label="Slide 1"></button>
+            <button aria-label="Slide 2"></button>
+            <button aria-label="Slide 3"></button>
+            <button aria-label="Slide 4"></button>
+            <button aria-label="Slide 5"></button>
+        </div>
+    </section>
+
+    <!-- ===== Booking Widget ===== -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-widget">
+                <!-- Tabs -->
+                <div class="booking-tabs" id="bookingTabs" role="tablist">
+                    <button class="booking-tab active" data-target="#panelBookFlight" role="tab" aria-selected="true"><i class="bi bi-airplane-engines"></i> <span>Book Flight</span></button>
+                    <button class="booking-tab" data-target="#panelMyBooking" role="tab"><i class="bi bi-ticket-perforated"></i> <span>My Booking</span></button>
+                    <button class="booking-tab" data-target="#panelCheckin" role="tab"><i class="bi bi-check2-square"></i> <span>Check In</span></button>
+                    <button class="booking-tab" data-target="#panelTimetable" role="tab"><i class="bi bi-clock-history"></i> <span>Timetable</span></button>
+                </div>
+
+                <!-- Tab: Book Flight -->
+                <div class="booking-panel active" id="panelBookFlight" role="tabpanel">
+                    <form>
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-4">
+                                <div class="field-label">From</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-geo-alt icon"></i>
+                                    <div class="w-100">
+                                        <input type="text" id="from" list="airportList" value="Cairo (CAI)" class="text-truncate">
+                                        <div class="sub">Egypt</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <div class="field-label">To</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-geo-alt icon"></i>
+                                    <div class="w-100">
+                                        <input type="text" id="to" list="airportList" value="Istanbul (IST)" class="text-truncate">
+                                        <div class="sub">Türkiye</div>
+                                    </div>
+                                </div>
+                                <button type="button" class="swap-btn" aria-label="Swap" title="Swap"><i class="bi bi-arrow-left-right"></i></button>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <div class="field-label">Passengers</div>
+                                <div class="booking-field" id="passengerField">
+                                    <i class="bi bi-people icon"></i>
+                                    <div class="w-100">
+                                        <span class="fw-semibold"><span id="passengerTotal">1</span> <span id="passengerLabel">Passenger</span></span>
+                                        <div class="sub">Adults, Children, Infants</div>
+                                    </div>
+                                </div>
+                                <div class="passenger-dropdown shadow rounded-3 border p-3 mt-2 bg-white position-absolute start-0 end-0 z-3">
+                                    <div class="counter-row" data-max="9">
+                                        <div class="info">Adults <small>(12+ years)</small></div>
+                                        <div class="counter-controls">
+                                            <button type="button" class="minus">−</button>
+                                            <span class="count fw-bold">1</span>
+                                            <button type="button" class="plus">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="counter-row" data-max="9">
+                                        <div class="info">Child <small>(2-11 years)</small></div>
+                                        <div class="counter-controls">
+                                            <button type="button" class="minus">−</button>
+                                            <span class="count fw-bold">0</span>
+                                            <button type="button" class="plus">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="counter-row" data-max="9">
+                                        <div class="info">Infant <small>(Under 2 years)</small></div>
+                                        <div class="counter-controls">
+                                            <button type="button" class="minus">−</button>
+                                            <span class="count fw-bold">0</span>
+                                            <button type="button" class="plus">+</button>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">* Infants don't have a dedicated seat in the plan</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-1 align-items-end">
+                            <div class="col-md-3 return-field">
+                                <div class="field-label">Trip</div>
+                                <div class="booking-field px-0">
+                                    <div class="w-100">
+                                        <select class="tripTypeSelect border-0 w-100" name="tripType">
+                                            <option value="round" selected>Round Trip</option>
+                                            <option value="oneway">One Way</option>
+                                            <option value="multi">Multi Destination</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 return-field">
+                                <div class="field-label">Depart</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-calendar3 icon"></i>
+                                    <input type="date" class="border-0">
+                                </div>
+                            </div>
+                            <div class="col-md-3 return-field">
+                                <div class="field-label">Return</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-calendar3 icon"></i>
+                                    <input type="date" class="border-0">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="field-label">Promo Code</div>
+                                <div class="booking-field" id="promoField">
+                                    <i class="bi bi-percent icon"></i>
+                                    <div class="w-100">
+                                        <span class="fw-semibold" id="addPromoBtn" style="cursor:pointer;">Add Promo Code +</span>
+                                        <div class="promo-code-wrap d-none">
+                                            <input type="text" class="border-0 w-100" placeholder="Enter promo code" maxlength="10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="multi-leg d-none mt-3">
+                            <div class="alert alert-warning py-2 small">
+                                <i class="bi bi-info-circle me-1"></i> Multi-destination: Add your extra flights after selecting the first leg.
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-main btn-lg px-5"><i class="bi bi-search me-2"></i> Find Flights</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Tab: My Booking -->
+                <div class="booking-panel" id="panelMyBooking" role="tabpanel">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-4">
+                            <h4 class="fw-bold text-purple mb-2">Manage your upcoming trip</h4>
+                            <p class="text-muted mb-0">Retrieve your booking using your booking reference.</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-5">
+                                        <div class="field-label">Booking Reference</div>
+                                        <div class="booking-field">
+                                            <i class="bi bi-receipt icon"></i>
+                                            <input type="text" placeholder="e.g. ABC123" maxlength="6" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="field-label">Last Name</div>
+                                        <div class="booking-field">
+                                            <i class="bi bi-person icon"></i>
+                                            <input type="text" placeholder="e.g. Smith" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <button type="submit" class="btn btn-purple w-100"><i class="bi bi-search me-2"></i> Retrieve</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Check In -->
+                <div class="booking-panel" id="panelCheckin" role="tabpanel">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-4">
+                            <h4 class="fw-bold mb-2 text-purple">Online check-in</h4>
+                            <p class="text-muted mb-1">Online check-in opens 24 hours before your flight.</p>
+                            <a href="#" class="small text-purple fw-semibold"><i class="bi bi-question-circle me-1"></i>Where can I find this?</a>
+                        </div>
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="mb-3">
+                                    <div class="field-label mb-2">Identification Type</div>
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input radio-div-trigger" type="radio" name="checkinType" id="ckBookingRef" value="ref" data-related-div="the-booking-ref" checked>
+                                            <label class="form-check-label" for="ckBookingRef">Booking Reference</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input radio-div-trigger" type="radio" name="checkinType" id="ckTicketNo" value="ticket" data-related-div="the-ticket-number">
+                                            <label class="form-check-label" for="ckTicketNo">Ticket Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-5">
+                                        <div class="field-label" id="checkinIdLabel">Booking Reference</div>
+                                        <div class="booking-field">
+                                            <i class="bi bi-receipt icon"></i>
+                                            <input type="text" id="checkinIdInput" placeholder="Booking reference" maxlength="6">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="field-label">Last Name</div>
+                                        <div class="booking-field">
+                                            <i class="bi bi-person icon"></i>
+                                            <input type="text" placeholder="e.g. Smith" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <button type="submit" class="btn btn-purple w-100"><i class="bi bi-check2-square me-2"></i> Check In</button>
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-2">* Online check-in opens 24 hours before your flight.</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Timetable -->
+                <div class="booking-panel" id="panelTimetable" role="tabpanel">
+                    <form>
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-4">
+                                <div class="field-label">From</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-geo-alt icon"></i>
+                                    <input type="text" list="airportList" value="Cairo (CAI)">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="field-label">To</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-geo-alt icon"></i>
+                                    <input type="text" list="airportList" value="Hurghada (HRG)">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="field-label">Trip</div>
+                                <div class="booking-field px-0">
+                                    <div class="w-100">
+                                        <select class="tripTypeSelect border-0 w-100" name="ttTrip">
+                                            <option value="round" selected>Round Trip</option>
+                                            <option value="oneway">One Way</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 return-field">
+                                <div class="field-label">Depart</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-calendar3 icon"></i>
+                                    <input type="date" class="border-0">
+                                </div>
+                            </div>
+                            <div class="col-md-4 return-field">
+                                <div class="field-label">Return</div>
+                                <div class="booking-field">
+                                    <i class="bi bi-calendar3 icon"></i>
+                                    <input type="date" class="border-0">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-main w-100 py-2"><i class="bi bi-clock-history me-2"></i> Show Timetable</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Special Offers ===== -->
+    <section class="section offers-section" id="offers">
+        <div class="container-fluid px-0">
+            <div class="sectionTitle d-flex justify-content-center">
+                <a href="#"><h2>Special Offers</h2></a>
+            </div>
+            <div class="offers-carousel position-relative">
+                <div class="offers-track">
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/athens.jpg" alt="Cairo to Athens">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Athens</div>
+                            <div class="price fw-bold fst-italic">From EGP 3,937</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/alexandria.jpg" alt="Alexandria to Athens">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Alexandria</div>
+                            <div class="to">Athens</div>
+                            <div class="price fw-bold fst-italic">From EGP 4,245</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/kuwait.jpg" alt="Cairo to Kuwait">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Kuwait</div>
+                            <div class="price fw-bold fst-italic">From EGP 4,754</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/cairo-istanbul.jpg" alt="Cairo to Istanbul">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Istanbul</div>
+                            <div class="price fw-bold fst-italic">From EGP 4,999</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/amman.jpg" alt="Asyut to Amman">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Asyut</div>
+                            <div class="to">Amman</div>
+                            <div class="price fw-bold fst-italic">From EGP 5,034</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/hero-20.jpg" alt="Sohag to Kuwait">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Sohag</div>
+                            <div class="to">Kuwait</div>
+                            <div class="price fw-bold fst-italic">From EGP 5,122</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/cairo-istanbul.jpg" alt="Hurghada to Istanbul">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Hurghada</div>
+                            <div class="to">Istanbul</div>
+                            <div class="price fw-bold fst-italic">From EGP 5,760</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/cairo-istanbul.jpg" alt="Sharm el-Sheikh to Istanbul">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Sharm el-Sheikh</div>
+                            <div class="to">Istanbul</div>
+                            <div class="price fw-bold fst-italic">From EGP 5,862</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/milan.jpg" alt="Hurghada to Milan">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Hurghada</div>
+                            <div class="to">Milan</div>
+                            <div class="price fw-bold fst-italic">From EGP 5,999</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/sharm-milan.jpg" alt="Sharm el-Sheikh to Milan">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Sharm el-Sheikh</div>
+                            <div class="to">Milan</div>
+                            <div class="price fw-bold fst-italic">From EGP 5,999</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/cologne.jpg" alt="Cairo to Cologne">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Cologne</div>
+                            <div class="price fw-bold fst-italic">From EGP 7,510</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/oslo.jpg" alt="Cairo to Oslo">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Oslo</div>
+                            <div class="price fw-bold fst-italic">From EGP 7,574</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/rome.jpg" alt="Cairo to Rome">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Rome</div>
+                            <div class="price fw-bold fst-italic">From EGP 7,734</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/stockholm.jpg" alt="Cairo to Stockholm">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Stockholm</div>
+                            <div class="price fw-bold fst-italic">From EGP 7,986</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/aalborg.jpg" alt="Hurghada to Aalborg">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Hurghada</div>
+                            <div class="to">Aalborg</div>
+                            <div class="price fw-bold fst-italic">From EGP 10,074</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/baghdad.jpg" alt="Cairo to Baghdad">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Cairo</div>
+                            <div class="to">Baghdad</div>
+                            <div class="price fw-bold fst-italic">From EGP 10,986</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/nairobi.jpg" alt="Hurghada to Nairobi">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Hurghada</div>
+                            <div class="to">Nairobi</div>
+                            <div class="price fw-bold fst-italic">From EGP 11,824</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/mombasa.jpg" alt="Hurghada to Mombasa">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Hurghada</div>
+                            <div class="to">Mombasa</div>
+                            <div class="price fw-bold fst-italic">From EGP 14,324</div>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-slide">
+                        <img src="assets/images/offers/zanzibar.jpg" alt="Hurghada to Zanzibar">
+                        <div class="gr1"></div>
+                        <div class="details">
+                            <div class="from">Hurghada</div>
+                            <div class="to">Zanzibar</div>
+                            <div class="price fw-bold fst-italic">From EGP 15,467</div>
+                        </div>
+                    </a>
+                </div>
+                <button class="carousel-arrow prev" aria-label="Previous offers"><i class="bi bi-chevron-left"></i></button>
+                <button class="carousel-arrow next" aria-label="Next offers"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Latest Travel Update Banner ===== -->
+    <section class="latest-travel-update d-flex align-items-end align-items-lg-center p-0 bgImage top-picks-main mb-2 mb-md-3">
+        <a class="cursor-pointer w-100" href="#">
+            <img class="object w-100 img-fluid" src="assets/images/offers/hero-20.jpg" alt="Air Cairo Cares - Our commitment to passengers of determination">
+        </a>
+    </section>
+
+    <!-- ===== Flying Service ===== -->
+    <section class="homePage-services pt-1" id="homePage-services">
+        <div class="sectionTitle d-flex justify-content-center text-center my-2"><h2>Flying Service</h2></div>
+        <div class="bg-white mb-2 mb-lg-5">
+            <div class="container services-wrap">
+                <div class="row g-2 g-md-3">
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <a class="service-card" href="#">
+                            <div class="icon"><img src="assets/images/icons/visa.png" alt="Egypt E-Visa"></div>
+                            <div class="service-details">Egypt E-Visa</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <a class="service-card" href="#">
+                            <div class="icon"><img src="assets/images/icons/seat.png" alt="Seat Reservation"></div>
+                            <div class="service-details">Seat Reservation</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <a class="service-card" href="#">
+                            <div class="icon"><img src="assets/images/icons/where-we-fly.png" alt="Where we Fly"></div>
+                            <div class="service-details">Where we Fly</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <a class="service-card" href="#">
+                            <div class="icon"><img src="assets/images/icons/flight-status.png" alt="Flight Status"></div>
+                            <div class="service-details">Flight Status</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <a class="service-card" href="#">
+                            <div class="icon"><img src="assets/images/icons/extra-bag.png" alt="Add Extra Bag"></div>
+                            <div class="service-details">Add Extra Bag</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Online Check-in Clipped Banner ===== -->
+    <section class="new-sides-widg d-md-flex p-0 my-3">
+        <div class="col-md-5 p-0">
+            <img class="object w-100" src="assets/images/icons/checkin.jpg" alt="Online check-in">
+        </div>
+        <div class="col-md-7 p-0 position-relative clipped-side">
+            <div class="h-100 wrap position-relative">
+                <img class="object w-100 h-100 position-absolute d-none d-md-block" src="assets/images/icons/plan.jpg" alt="Air Cairo plan">
+                <div class="details p-3 position-relative px-4 py-3 d-flex h-100 flex-column align-items-start justify-content-center text-white">
+                    <h2 class="h1 text-capitalize"><p>Online Check-in Service<br>Available Now!</p></h2>
+                    <a class="btn btn-main btn-1 mt-3" href="#booking" role="button">Check Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Top Picks (Discover Cars + VIP) ===== -->
+    <section class="container-fluid top-picks-main" id="homeWidget-1">
+        <div class="container">
+            <div class="row py-md-2 g-4">
+                <div class="col-12 col-lg-6">
+                    <div class="promo-banner h-100" style="background-image: url('assets/images/icons/car.jpg');">
+                        <div class="overlay"></div>
+                        <div class="promo-content">
+                            <span class="badge bg-white text-purple rounded-pill px-3 py-2 mb-2">Discover Cars</span>
+                            <h3>Search car rentals for your next journey</h3>
+                            <p>Save up to 70% on car hire at your destination.</p>
+                            <a href="#" class="btn btn-main">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="promo-banner h-100" style="background-image: url('assets/images/icons/gm.jpg');">
+                        <div class="overlay"></div>
+                        <div class="promo-content">
+                            <span class="badge bg-white text-purple rounded-pill px-3 py-2 mb-2">VIP Service</span>
+                            <h3>Enjoy VIP Travel Service</h3>
+                            <p>Hassle-free experience at all airports in Egypt. Skip the queues with Fast Track.</p>
+                            <a href="#" class="btn btn-main">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-3 pr-md-5">
+                    <div class="logo mainlogo pb-3 px-2 text-center">
+                        <img class="img-fluid" src="assets/images/logo.png" alt="Air Cairo">
+                    </div>
+                    <div class="text-center my-3 social">
+                        <p class="text-uppercase text mb-1">Stay Connected</p>
+                        <div class="socialMedias d-flex justify-content-center">
+                            <a class="px-1" href="#"><img src="assets/images/social/facebook.png" alt="Facebook"></a>
+                            <a class="px-1" href="#"><img src="assets/images/social/instagram.png" alt="Instagram"></a>
+                            <a class="px-1" href="#"><img src="assets/images/social/twitter.png" alt="Twitter"></a>
+                            <a class="px-1" href="#"><img src="assets/images/social/youtube.png" alt="YouTube"></a>
+                            <a class="px-1" href="#"><img src="assets/images/social/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="get-app pb-2 d-flex align-items-center justify-content-center flex-wrap">
+                        <a class="download px-1" href="#"><img class="img-fluid app-badge" src="assets/images/apps/google-play.png" alt="Google Play"></a>
+                        <a class="download px-1" href="#"><img class="img-fluid app-badge" src="assets/images/apps/apple-store.png" alt="App Store"></a>
+                        <a class="download px-1" href="#"><img class="img-fluid app-badge" src="assets/images/apps/huawei.png" alt="Huawei AppGallery"></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 navColumn px-md-3 py-4 p-lg-0" id="footerMenu">
+                    <div class="row">
+                        <div class="col-6 col-md-4 my-1 mb-md-3">
+                            <div class="navMainLink">Plan &amp; Book</div>
+                            <a class="alt d-block text-capitalize" href="#"><li>My Booking</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Book a Flight</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Special Offers</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Route Map</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Visa and Health</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Charter Flights</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Airport Transfer</li></a>
+                        </div>
+                        <div class="col-6 col-md-4 my-1 mb-md-3">
+                            <div class="navMainLink">Travel Info</div>
+                            <a class="alt d-block text-capitalize" href="#"><li>Seat Selection</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Baggage</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Special Service</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Airport Check-in</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Flight Status</li></a>
+                        </div>
+                        <div class="col-6 col-md-4 my-1 mb-md-3">
+                            <div class="navMainLink">About Us</div>
+                            <a class="alt d-block text-capitalize" href="#"><li>Mission &amp; Vision</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>About Air Cairo</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Travel News</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Air Cairo Travel Blog</li></a>
+                        </div>
+                        <div class="col-6 col-md-4 my-1 mb-md-3">
+                            <div class="navMainLink">Contact Us</div>
+                            <a class="alt d-block text-capitalize" href="#"><li>Support</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Contacts</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>FAQ</li></a>
+                        </div>
+                        <div class="col-6 col-md-4 my-1 mb-md-3">
+                            <div class="navMainLink">Legal</div>
+                            <a class="alt d-block text-capitalize" href="#"><li>Privacy Policy</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Cookies Policy</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Ticket Notice</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Condition of Carriage</li></a>
+                        </div>
+                        <div class="col-6 col-md-4 my-1 mb-md-3">
+                            <div class="navMainLink">Partners</div>
+                            <a class="alt d-block text-capitalize" href="#"><li>Agents Login</li></a>
+                            <a class="alt d-block text-capitalize" href="#"><li>Air Cairo Connect</li></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h4 class="text-main fw-bold text-center">Subscribe to Our Newsletter</h4>
+                    <p class="text-center text-muted mb-2">Get the latest offers &amp; travel news</p>
+                    <form class="py-3 footer-newsletter-form" novalidate>
+                        <div class="row">
+                            <div class="col-12 form-group mb-3">
+                                <input class="form-control" type="email" name="email" id="nlEmail" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-12 form-group mb-3">
+                                <input class="form-control" type="text" name="name" id="nlName" placeholder="Name" required>
+                            </div>
+                            <div class="col-12 form-group mb-3">
+                                <input class="form-control" type="tel" name="phone" id="nlPhone" maxlength="15" placeholder="Phone">
+                            </div>
+                            <div class="col-12 mb-3 form-group">
+                                <select class="form-select" name="country" aria-label="Country & Language">
+                                    <option value="" selected>Country &amp; Language</option>
+                                    <option>Egypt (English)</option>
+                                    <option>Egypt (العربية)</option>
+                                    <option>Saudi Arabia (English)</option>
+                                    <option>Kuwait (English)</option>
+                                    <option>United Arab Emirates (English)</option>
+                                    <option>Qatar (English)</option>
+                                    <option>Jordan (English)</option>
+                                    <option>Germany (English)</option>
+                                    <option>Italy (English)</option>
+                                    <option>Global (English)</option>
+                                </select>
+                            </div>
+                            <div class="d-flex form-inputs col-12 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input me-2" type="checkbox" id="nlPrivacy" required>
+                                    <label class="form-check-label" for="nlPrivacy">
+                                        Agree to Air Cairo's <a href="#" class="text-main">privacy policy and terms of use</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group mb-3">
+                                <small class="newsletter-msg d-block"></small>
+                                <button class="btn btn-main w-100" type="submit">Subscribe Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    <a class="text-main tel text-center d-flex align-items-center justify-content-center ltr" href="tel:2727">
+                        <i class="bi bi-telephone-fill me-2"></i><span class="text-nowrap fw-bold">2727</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row copyRight pt-3 ltr pb-3">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start text-center text-md-left">
+                    <span>Copyright 2026 &copy; Air Cairo All Rights Reserved</span>
+                    <br>
+                    <span>Copyright 2026 &copy; Made By Yahya Mohamed</span>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                    Powered by <a class="ps-1" href="#" rel="nofollow noopener" target="_blank"><strong>e-motion</strong></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== Mobile bottom sticky icons ===== -->
+    <div class="position-fixed bottom-0 mobBottostickyIcons pt-3 bg-white d-flex justify-content-between p-2 w-100 d-md-none">
+        <a class="itm d-flex flex-column align-items-center text-main px-2" href="#booking">
+            <i class="bi bi-airplane-engines icon"></i><span class="txt">Booking</span>
+        </a>
+        <a class="itm d-flex flex-column align-items-center text-main px-2" href="#panelCheckin">
+            <i class="bi bi-check2-square icon"></i><span class="txt">Check-in</span>
+        </a>
+        <a class="itm d-flex flex-column align-items-center text-main px-2" href="#footer">
+            <i class="bi bi-headset icon"></i><span class="txt">Contact Us</span>
+        </a>
+    </div>
+
+    <!-- Airport datalist for autocomplete -->
+    <datalist id="airportList">
+        <option value="Cairo (CAI)">Cairo International Airport</option>
+        <option value="Alexandria (ALY)">Borg El Arab Airport</option>
+        <option value="Hurghada (HRG)">Hurghada International Airport</option>
+        <option value="Sharm el-Sheikh (SSH)">Sharm el-Sheikh International Airport</option>
+        <option value="Aswan (ASW)">Aswan International Airport</option>
+        <option value="Asyut (ATZ)">Asyut International Airport</option>
+        <option value="Luxor (LXR)">Luxor International Airport</option>
+        <option value="Sohag (HMB)">Sohag International Airport</option>
+        <option value="Istanbul (IST)">Istanbul Airport</option>
+        <option value="Athens (ATH)">Athens International Airport</option>
+        <option value="Rome (FCO)">Leonardo da Vinci–Fiumicino Airport</option>
+        <option value="Milan (MXP)">Malpensa Airport</option>
+        <option value="Kuwait (KWI)">Kuwait International Airport</option>
+        <option value="Jeddah (JED)">King Abdulaziz International Airport</option>
+        <option value="Riyadh (RUH)">King Khalid International Airport</option>
+        <option value="Amman (AMM)">Queen Alia International Airport</option>
+        <option value="Paris (CDG)">Paris Charles de Gaulle Airport</option>
+        <option value="Berlin (BER)">Berlin Brandenburg Airport</option>
+        <option value="Frankfurt (FRA)">Frankfurt Airport</option>
+        <option value="Munich (MUC)">Munich International Airport</option>
+        <option value="Vienna (VIE)">Vienna International Airport</option>
+        <option value="Zanzibar (ZNZ)">Abeid Amani Karume International Airport</option>
+    </datalist>
+
+    <!-- Bootstrap JS + custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
